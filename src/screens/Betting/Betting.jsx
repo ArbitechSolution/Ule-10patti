@@ -85,7 +85,6 @@ function Betting({ selectedCard }) {
           // console.log("Minutes: ", parseInt(myMinutes));
           // console.log("Seconds: ", startTime);
           if (startTime > 480 && startTime < 500) {
-            // console.log("Calculating time", startTime);
             setTimercalcuate(true);
           } else if (startTime == 600) {
             // console.log("Calling the Api");
