@@ -335,7 +335,12 @@ function Betting({ selectedCard }) {
               {timerCalculate ? (
                 <div>
                   <center className="banner_topOne">
-                    <img src="logo.png" alt="banner" style={{ width: "75%" }} />
+                    <img
+                      src="logo.png"
+                      alt="banner"
+                      className="form-group center spiner1"
+                      style={{ width: "60%" }}
+                    />
                   </center>
                 </div>
               ) : (
