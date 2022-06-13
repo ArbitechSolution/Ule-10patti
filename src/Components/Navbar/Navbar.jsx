@@ -90,7 +90,7 @@ const NavbarCustom = () => {
             </div>
             <ul className="menu">
               <li className="button-wrapper">
-                <a href="#" className="bxshdow cmn--btn active btn--lg">
+                <a href="" className="bxshdow cmn--btn active btn--lg">
                   {btnText}
                 </a>
               </li>
@@ -100,7 +100,7 @@ const NavbarCustom = () => {
               {/* <div className="header-trigger me-4">
                 <span></span>
               </div> */}
-              <a href="#" className="cmn--btn active btn--md d-none d-sm-block">
+              <a href="" className="cmn--btn active btn--md d-none d-sm-block">
                 {btnText}
               </a>
             </div>

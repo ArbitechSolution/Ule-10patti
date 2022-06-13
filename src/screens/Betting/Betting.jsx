@@ -336,7 +336,7 @@ function Betting({ selectedCard }) {
                 <div>
                   <center className="banner_topOne">
                     <img
-                      src="logo.png"
+                      src="spin.png"
                       alt="banner"
                       className="form-group center spiner1"
                       style={{ width: "60%" }}
