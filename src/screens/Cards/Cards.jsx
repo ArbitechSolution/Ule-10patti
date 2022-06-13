@@ -29,8 +29,7 @@ export default function Cards(props) {
             }
           }
         }
-        deme_Array.push(card[0]);
-        deme_Array.push(card[1]);
+
         // let one = bookedCardsArray[0]
         // console.log("   ",bookedCardsArray);
         setBookedCards();
