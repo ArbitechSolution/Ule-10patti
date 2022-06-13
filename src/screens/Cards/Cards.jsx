@@ -7,7 +7,6 @@ import { abi, contractAddress } from "../../Components/Utils/utils";
 export default function Cards(props) {
   let [selectedCard, setSelectedCard] = useState();
   let [bookedCards, setBookedCards] = useState([]);
-
   const getBookedCards = async () => {
     try {
       let add = await loadWeb3();
@@ -30,9 +29,11 @@ export default function Cards(props) {
             }
           }
         }
-
+        deme_Array.push(card[0]);
+        deme_Array.push(card[1]);
         // let one = bookedCardsArray[0]
         // console.log("   ",bookedCardsArray);
+        setBookedCards();
         setBookedCards(deme_Array);
       }
     } catch (e) {
@@ -47,7 +48,7 @@ export default function Cards(props) {
   };
   useEffect(() => {
     getBookedCards();
-  }, [bookedCards]);
+  }, []);
   return (
     <section class="game-section padding-top padding-bottom bg_img bg_img1">
       <div class="container">
@@ -211,20 +212,25 @@ export default function Cards(props) {
           </h2>
 
           <div class="row justify-content-center">
-            {bookedCards.map((items) => {
-              return (
-                <div class="col-lg-4 col-xl-2 col-md-6 col-sm-6">
-                  <div class="game-item">
-                    <div class="game-inner">
-                      <div class="game-item_thumb">
-                        <img src={items?.imgSrc} alt="game" />
+            {bookedCards &&
+              bookedCards.map((items) => {
+                return (
+                  <div class="col-lg-4 col-xl-2 col-md-6 col-sm-6">
+                    <div class="game-item">
+                      <div class="game-inner d-flex justify-content-center align-items-center">
+                        <div class="img2  d-flex justify-content-center align-items-center">
+                          <img
+                            src={items?.imgSrc}
+                            alt="game"
+                            className="ml-10 cardherewon imageBookedCard"
+                          />
+                        </div>
                       </div>
+                      {/* <div class="mask"></div> */}
                     </div>
-                    <div class="mask"></div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
       </div>
