@@ -97,11 +97,11 @@ const NavbarCustom = () => {
               <button className="btn-close btn-close-white d-lg-none"></button>
             </ul>
             <div className="header-trigger-wrapper d-flex d-lg-none align-items-center">
-              <div className="header-trigger me-4">
+              {/* <div className="header-trigger me-4">
                 <span></span>
-              </div>
+              </div> */}
               <a href="#" className="cmn--btn active btn--md d-none d-sm-block">
-                No Wallet
+                {btnText}
               </a>
             </div>
           </div>
