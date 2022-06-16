@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 import { card } from "./array";
 import axios from "axios";
 import spinnerImage from "../assets/images/game/spinersmall.png";
+import spin from "../assets/images/game/spin.png";
 function Betting({ selectedCard }) {
   let [userRewards, setUsersRewards] = useState(0);
   let [minutes, setMinutes] = useState(0);
@@ -17,7 +18,7 @@ function Betting({ selectedCard }) {
   let [secods, setSeconds] = useState(0);
   let [toggle, setToggle] = useState(false);
   let [contractStarttime, setContractstartTime] = useState();
-  let [timerCalculate, setTimercalcuate] = useState(false);
+  let [timerCalculate, setTimercalcuate] = useState(true);
   const [modal, setModal] = useState();
   const [mybalance, setMybalance] = useState(0);
   let [myWinningCard, setMywinningCard] = useState();
@@ -336,7 +337,7 @@ function Betting({ selectedCard }) {
                 <div>
                   <center className="banner_topOne">
                     <img
-                      src="spin.png"
+                      src={spin}
                       alt="banner"
                       className="form-group center spiner1"
                       style={{ width: "60%" }}
