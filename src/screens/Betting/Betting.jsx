@@ -18,7 +18,7 @@ function Betting({ selectedCard }) {
   let [secods, setSeconds] = useState(0);
   let [toggle, setToggle] = useState(false);
   let [contractStarttime, setContractstartTime] = useState();
-  let [timerCalculate, setTimercalcuate] = useState(true);
+  let [timerCalculate, setTimercalcuate] = useState(false);
   const [modal, setModal] = useState();
   const [mybalance, setMybalance] = useState(0);
   let [myWinningCard, setMywinningCard] = useState();
